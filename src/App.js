@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import Header from './header';
+import CreateArtist from './create-artist';
 
 class App extends Component {
   render() {
@@ -8,14 +10,10 @@ class App extends Component {
         <header className='header'>
         </header>
         <div className='box-wrap'>
-          <h1 className='header'>8Track</h1>
-          <div className='input-box'>
-            <h1 className='box-header'>add artist</h1>
-            <input className='new-artist' placeholder='Artist'/>
-            <input className='submit' type='submit'/>
-          </div>
+          <Header />
+          <CreateArtist />
         </div>
-        </div>
+      </div>
     );
   }
 }
