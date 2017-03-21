@@ -3,6 +3,7 @@ import Axios from 'axios';
 import './App.css';
 import Header from './header';
 import CreateArtist from './create-artist';
+import Artists from './artists';
 
 class App extends Component {
   constructor(props) {
@@ -16,8 +17,7 @@ class App extends Component {
   componentDidMount() {
     Axios.get('https://node-8track.herokuapp.com/api/v1/artists')
       .then((response) => {
-        console.log(response.data);
-        // this.setState({ artists: response.data });
+        this.setState({ artists: response.data });
       });
   }
 
@@ -29,6 +29,7 @@ class App extends Component {
         <div className='box-wrap'>
           <Header />
           <CreateArtist />
+          <Artists artists={this.state.artists} />
         </div>
       </div>
     );
