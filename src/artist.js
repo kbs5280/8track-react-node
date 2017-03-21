@@ -9,12 +9,12 @@ class Artist extends Component {
     }
   }
 
-  mouseEnter() {
+  renderSongs() {
     console.log('mouse enters');
     this.setState({ hovered: true });
   }
 
-  mouseLeave() {
+  removeSongs() {
     console.log('mouse leaves');
     this.setState({ hovered: false });
   }
@@ -22,8 +22,8 @@ class Artist extends Component {
   render() {
     return (
       <div className='artist'
-           onMouseEnter={this.mouseEnter.bind(this)}
-           onMouseLeave={this.mouseLeave.bind(this)}>
+           onMouseEnter={this.renderSongs.bind(this)}
+           onMouseLeave={this.removeSongs.bind(this)}>
         {this.props.name}
       </div>
     )

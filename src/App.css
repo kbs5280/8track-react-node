@@ -15,7 +15,7 @@ img {
   align-items: center;
   flex-direction: column;
   font-family: 'Russo One', sans-serif;
-  font-size: 75px;
+  font-size: 70px;
   letter-spacing: 0.5cm;
   margin-bottom: 10px;
 }
@@ -68,6 +68,7 @@ img {
 
 .artist {
   padding: 25px;
+  font-size: 22px;
   font-family: 'Source Code Pro', monospace;
   text-decoration: underline;
 }
