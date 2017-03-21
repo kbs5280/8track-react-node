@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Artist extends Component {
   render() {
     return (
-
-      <div>{this.props.name}</div>
-
+      <div className='artist'>
+        {this.props.name}
+      </div>
     )
   }
 }
