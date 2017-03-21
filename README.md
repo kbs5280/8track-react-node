@@ -8,6 +8,9 @@
 
 -----
 
+![8Track Screen Shot](https://github.com/kbs5280/8track-react-node/blob/render_songs/screen_shot.png "8Track")
+
+
 # 8Track React-Node
 
 8Track React-Node is a test-driven React App with full CRUD functionality. It uses Axios to make asynchronous calls to the 8Track Node API (of the same series) in production on Heroku.com. 8Track Node stores and exposes data related to artists and songs. 8Track React-Node renders the data to the DOM and provides a simple user interface.
