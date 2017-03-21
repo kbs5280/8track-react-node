@@ -37,6 +37,7 @@ img {
 
 .input-box {
   opacity: 0.70;
+  margin-bottom: 20px;
   height: 275px;
   width: 600px;
   border-radius: 15px;
@@ -63,4 +64,15 @@ img {
   border-radius: 5px;
   font-size: 15px;
   font-family: 'Space Mono', monospace;
+}
+
+.artist {
+  padding: 25px;
+  font-family: 'Source Code Pro', monospace;
+  text-decoration: underline;
+}
+
+.artist:hover {
+  background: lightgray;
+  border-radius: 10px;
 }
