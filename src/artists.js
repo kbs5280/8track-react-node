@@ -5,9 +5,9 @@ class Artists extends Component {
   renderArtists() {
 
     return this.props.artists.map((artist, index) =>
-    <Artist key={ index }
-            id={ artist.id }
-            name={ artist.name } />);
+      <Artist key={ index }
+              id={ artist.id }
+              name={ artist.name } />);
   }
 
   render() {
