@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    Axios.get('https://node-8track.herokuapp.com/api/v1/artists')
+    Axios.get('https://node-8track.herokuapp.com/api/v1/artists-songs')
       .then((response) => {
         this.setState({ artists: response.data });
       });
