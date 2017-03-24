@@ -14,10 +14,19 @@ class App extends Component {
     };
   }
 
-  componentDidMount() {
+  componentWillMount() {
+    const artistSongs = []
+
     Axios.get('https://node-8track.herokuapp.com/api/v1/artists-songs')
       .then((response) => {
-        this.setState({ artists: response.data });
+        response.data.forEach((artist) => {
+          if (!Object.keys(artistSongs).includes(artist.name)) {
+            artistSongs[artist.name] = {songs: [artist.title]};
+          } else {
+            artistSongs[artist.name]['songs'].push(artist.title);
+          }
+        })
+        this.setState({ artists: artistSongs });
       });
   }
 
